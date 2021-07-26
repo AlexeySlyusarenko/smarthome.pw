@@ -1,0 +1,12 @@
+# Files and folders of OS
+.DS_Store
+Thumbs.db
+
+# Files of Editor
+.idea
+*.sublime*
+.vscode
+
+# Other
+*.log*
+node_modules/

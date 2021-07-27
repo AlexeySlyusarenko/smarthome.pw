@@ -1,0 +1,80 @@
+.page {
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--page-bg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.page__body {
+  z-index: 20;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page__control {
+  z-index: 40;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+@media (orientation: portrait) {
+  @media (min-width: 768px) {
+    .page__control {
+      display: none;
+    }
+  }
+}
+@media (orientation: landscape) {
+  @media (min-width: 1024px) {
+    .page__control {
+      display: none;
+    }
+  }
+}
+
+.page__plan {
+  z-index: 30;
+  display: none;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+@media (orientation: portrait) {
+  @media (min-width: 768px) {
+    .page__plan {
+      display: block;
+    }
+  }
+}
+@media (orientation: landscape) {
+  @media (min-width: 1024px) {
+    .page__plan {
+      display: block;
+    }
+  }
+}
+
+.page__nav {
+  z-index: 50;
+  display: block;
+  /* overflow: hidden; */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: var(--distance-between-element);
+  border-radius: var(--page-radius);
+  background-color: var(--page-nav-bg);
+  backdrop-filter: blur(10px);
+}

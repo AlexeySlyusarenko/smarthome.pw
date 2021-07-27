@@ -1,0 +1,71 @@
+@media (orientation: portrait) {
+  :root {
+    --button-control-in-row: 4;
+  }
+}
+
+@media (orientation: landscape) {
+  @media (max-width: 600px) {
+    :root {
+      --button-control-in-row: 7;
+    }
+  }
+  @media (min-width: 600px) {
+    :root {
+      --button-control-in-row: 8;
+    }
+  }
+  @media (min-width: 800px) {
+    :root {
+      --button-control-in-row: 10;
+    }
+  }
+}
+
+:root {
+  /* set size element */
+  /* property:
+  --page-max-size
+  --page-min-size
+  set in page.js */
+
+  /* page */
+  --page-width: 100vw;
+  --page-height: 100vh;
+  --page-max-size: 100vmax;
+  --page-min-size: 100vmin;
+  --page-radius: 20px;
+  --distance-between-element: calc(0.03 * var(--page-min-size));
+
+
+  /* button-control */
+  --button-control-size: calc((var(--page-width) - (var(--button-control-in-row) + 1) * var(--distance-between-element)) / var(--button-control-in-row));
+  --button-control-switch-size: var(--button-control-size);
+  --button-control-slide-size: calc(2 * var(--button-control-size) + var(--distance-between-element));
+  /* --button-control-radius: calc(2 * var(--distance-between-element)); */
+  --button-control-radius: 20px;
+  --button-control-margin: calc(var(--distance-between-element) / 2);
+  --button-control-icon-size: calc(0.6 * var(--button-control-size));
+  --button-control-title-size: calc(0.3 * var(--button-control-icon-size));
+  --button-control-value-size: calc(0.2 * var(--button-control-icon-size));
+  --button-control-slide-bg-pos-x: 20px;
+  --button-control-slide-bg-pos-duration-animation: 0s;
+
+
+  /* button-nav */
+  --button-nav-size: 75px;
+  --button-nav-icon-size: calc(0.4 * var(--button-nav-size));
+  --button-nav-title-size: calc(0.4 * var(--button-nav-icon-size));
+  --button-nav-title-margin-size: calc(0.1 * var(--button-nav-icon-size));
+
+  /* control */
+
+
+  /* plan */
+
+
+  /* nav */
+  --nav-margin: var(--distance-between-element);
+  --nav-radius: var(--page-radius);
+  --nav-header-size: calc(var(--button-nav-icon-size) * 2 /  5);
+}

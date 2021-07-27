@@ -1,0 +1,22 @@
+:root {
+  /* page */
+  --page-bg: #353535;
+  --page-nav-bg: rgba(218, 218, 218, 0.4);
+  --page-elem-bg: #202124;
+  --page-elem-bg-active: rgb(218, 218, 218);
+  --text-color: #fff;
+
+  /* nav */
+  --nav-bg: rgba(218, 218, 218, 0.4);
+  --nav-text-color: var(--text-color);
+
+  /* button-nav */
+  --button-nav-color: #dadada;
+  /* variables to modify with js */
+  --button-nav-active-color: red;
+
+  --button-control-bg-color: var(--page-elem-bg);
+  --button-control-color: var(--text-color);
+  --button-control-active-bg-color: var(--page-elem-bg-active);
+  --button-control-active-color: red;
+}

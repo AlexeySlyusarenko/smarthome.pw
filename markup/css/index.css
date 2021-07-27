@@ -1,4 +1,14 @@
 @import url("normalize.css");
 @import url("common.css");
 
+@import url("var/color.css");
+@import url("var/size.css");
+
 @import url("blocks/visually-hidden.css");
+@import url("blocks/page.css");
+@import url("blocks/plan.css");
+@import url("blocks/slider.css");
+@import url("blocks/list-control.css");
+@import url("blocks/nav.css");
+@import url("blocks/button-control.css");
+@import url("blocks/button-nav.css");

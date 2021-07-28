@@ -28,9 +28,10 @@
   height: var(--button-nav-icon-size);
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 1.5px;
+  stroke-width: 1px;
   stroke: inherit;
   fill: none;
+  filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
 }
 
 /* title */

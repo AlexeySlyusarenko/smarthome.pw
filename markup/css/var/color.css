@@ -1,5 +1,6 @@
+/* light theme */
 :root {
-  /* light theme */
+  /* page */
   --page-bg: #F4F4F4;
   --page-nav-bg: rgba(190, 190, 190, 0.4);
   --page-elem-bg: #202124;
@@ -21,26 +22,31 @@
   --button-control-color: #686868;
   --button-control-active-color: red;
 
-  /* dark theme */
-  /* page */
-  --page-bg: #212121;
-  --page-nav-bg: rgba(218, 218, 218, 0.4);
-  --page-elem-bg: #595959;
-  --page-elem-bg-active: #737373;
-  --text-color: #cacaca;
-  --icon-shadow: drop-shadow(0 2px 3px rgb(0 0 0 / 0.4));
+}
 
-  /* nav */
-  --nav-bg: rgba(218, 218, 218, 0.4);
-  --nav-text-color: var(--text-color);
-
-  /* button-nav */
-  --button-nav-color: #dadada;
-  --button-nav-active-color: red;
-
-  /* button-control */
-  --button-control-bg-color: var(--page-elem-bg);
-  --button-control-color: var(--text-color);
-  --button-control-active-bg-color: var(--page-elem-bg-active);
-  --button-control-active-color: red;
+/* dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* page */
+    --page-bg: #212121;
+    --page-nav-bg: rgba(218, 218, 218, 0.4);
+    --page-elem-bg: #595959;
+    --page-elem-bg-active: #737373;
+    --text-color: #cacaca;
+    --icon-shadow: drop-shadow(0 2px 3px rgb(0 0 0 / 0.4));
+  
+    /* nav */
+    --nav-bg: rgba(218, 218, 218, 0.4);
+    --nav-text-color: var(--text-color);
+  
+    /* button-nav */
+    --button-nav-color: #dadada;
+    --button-nav-active-color: red;
+  
+    /* button-control */
+    --button-control-bg-color: var(--page-elem-bg);
+    --button-control-color: var(--text-color);
+    --button-control-active-bg-color: var(--page-elem-bg-active);
+    --button-control-active-color: red;
+  }
 }

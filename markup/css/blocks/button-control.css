@@ -72,7 +72,7 @@
   height: var(--button-control-icon-size);
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 2px;
+  stroke-width: 1px;
   stroke: inherit;
   fill: none;
 }

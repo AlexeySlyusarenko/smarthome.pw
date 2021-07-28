@@ -48,7 +48,7 @@
   --button-control-icon-size: calc(0.6 * var(--button-control-size));
   --button-control-title-size: calc(0.3 * var(--button-control-icon-size));
   --button-control-value-size: calc(0.2 * var(--button-control-icon-size));
-  --button-control-slide-bg-pos-x: 20px;
+  --button-control-slide-bg-pos-x: 160px;
   --button-control-slide-bg-pos-duration-animation: 0s;
 
 

@@ -1,22 +1,43 @@
 :root {
-  /* page */
-  --page-bg: #353535;
-  --page-nav-bg: rgba(218, 218, 218, 0.4);
+  /* light theme */
+  --page-bg: #F4F4F4;
+  --page-nav-bg: rgba(190, 190, 190, 0.4);
   --page-elem-bg: #202124;
   --page-elem-bg-active: rgb(218, 218, 218);
-  --text-color: #fff;
+  --text-color: #686868;
 
   /* nav */
-  --nav-bg: rgba(218, 218, 218, 0.4);
+  --nav-bg: var(--page-nav-bg);
   --nav-text-color: var(--text-color);
 
   /* button-nav */
-  --button-nav-color: #dadada;
-  /* variables to modify with js */
+  --button-nav-color: #686868;
+  --button-nav-disable-color: #B4B4B4;
   --button-nav-active-color: red;
+  
+  /* button-control */
+  --button-control-bg-color: #c8c8c8;
+  --button-control-active-bg-color: rgb(218, 218, 218);
+  --button-control-color: #686868;
+  --button-control-active-color: red;
 
-  --button-control-bg-color: var(--page-elem-bg);
+  /* page */
+  /* --page-bg: #353535;
+  --page-nav-bg: rgba(218, 218, 218, 0.4);
+  --page-elem-bg: #202124;
+  --page-elem-bg-active: rgb(218, 218, 218);
+  --text-color: #fff; */
+
+  /* nav */
+  /* --nav-bg: rgba(218, 218, 218, 0.4);
+  --nav-text-color: var(--text-color); */
+
+  /* button-nav */
+  /* --button-nav-color: #dadada;
+  --button-nav-active-color: red; */
+
+  /* --button-control-bg-color: var(--page-elem-bg);
   --button-control-color: var(--text-color);
   --button-control-active-bg-color: var(--page-elem-bg-active);
-  --button-control-active-color: red;
+  --button-control-active-color: red; */
 }

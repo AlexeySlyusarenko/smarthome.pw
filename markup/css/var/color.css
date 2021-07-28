@@ -21,23 +21,25 @@
   --button-control-color: #686868;
   --button-control-active-color: red;
 
+  /* dark theme */
   /* page */
-  /* --page-bg: #353535;
+  --page-bg: #212121;
   --page-nav-bg: rgba(218, 218, 218, 0.4);
-  --page-elem-bg: #202124;
-  --page-elem-bg-active: rgb(218, 218, 218);
-  --text-color: #fff; */
+  --page-elem-bg: #595959;
+  --page-elem-bg-active: #888;
+  --text-color: #ccc;
 
   /* nav */
-  /* --nav-bg: rgba(218, 218, 218, 0.4);
-  --nav-text-color: var(--text-color); */
+  --nav-bg: rgba(218, 218, 218, 0.4);
+  --nav-text-color: var(--text-color);
 
   /* button-nav */
-  /* --button-nav-color: #dadada;
-  --button-nav-active-color: red; */
+  --button-nav-color: #dadada;
+  --button-nav-active-color: red;
 
-  /* --button-control-bg-color: var(--page-elem-bg);
+  /* button-control */
+  --button-control-bg-color: var(--page-elem-bg);
   --button-control-color: var(--text-color);
   --button-control-active-bg-color: var(--page-elem-bg-active);
-  --button-control-active-color: red; */
+  --button-control-active-color: red;
 }

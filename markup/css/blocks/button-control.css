@@ -75,7 +75,7 @@
   stroke-width: 1px;
   stroke: inherit;
   fill: none;
-  filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
+  filter: var(--icon-shadow);
 }
 
 .button-control__value {

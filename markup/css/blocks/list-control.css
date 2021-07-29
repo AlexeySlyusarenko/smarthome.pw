@@ -1,0 +1,13 @@
+.list-control {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  position: relative;
+  padding: var(--button-control-margin);
+  padding-bottom: calc(var(--button-nav-size) + var(--distance-between-element) + var(--button-control-margin));
+}
+
+.list-control__item {
+  flex: 0 0 auto;
+}

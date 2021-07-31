@@ -76,7 +76,8 @@
   margin: var(--distance-between-element);
   border-radius: var(--page-radius);
   background-color: var(--page-nav-bg);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .page__loader {

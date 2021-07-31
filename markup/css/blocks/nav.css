@@ -8,7 +8,6 @@
   margin-bottom: calc(var(--button-nav-size) + 2 * var(--nav-margin));
   border-radius: var(--nav-radius);
   background-color: var(--nav-bg);
-  backdrop-filter: blur(10px);
 }
 
 .nav__header {

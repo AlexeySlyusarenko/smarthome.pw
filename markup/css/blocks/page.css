@@ -80,12 +80,37 @@
 }
 
 .page__loader {
+  will-change:
+    -webkit-backdrop-filter,
+            backdrop-filter;
   z-index: 60;
+  /* opacity: 1; */
+  visibility: visible;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  transition:
+    /* opacity 0.225s cubic-bezier(0.4, 0.0, 0.2, 1) 0.1s, */
+    -webkit-backdrop-filter 0.225s cubic-bezier(0.4, 0.0, 0.2, 1) 0.1s,
+    backdrop-filter 0.225s cubic-bezier(0.4, 0.0, 0.2, 1) 0.1s,
+    visibility 0s linear 0s;
+}
+
+.page__loader--hidden {
+  /* opacity: 0; */
+  visibility: hidden;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  transition:
+    /* opacity 0.225s cubic-bezier(0.4, 0.0, 0.2, 1) 0s, */
+    -webkit-backdrop-filter 0.225s cubic-bezier(0.4, 0.0, 0.2, 1) 0s,
+    backdrop-filter 0.225s cubic-bezier(0.4, 0.0, 0.2, 1) 0s,
+    visibility 0s linear 0.5s;
 }

@@ -1,0 +1,33 @@
+{
+  "name": "smarthome.pw",
+  "version": "0.0.1",
+  "description": "smart home web",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexeySlyusarenko/smarthome.pw.git"
+  },
+  "keywords": [
+    "smart",
+    "home",
+    "smarthome",
+    "web"
+  ],
+  "author": "Alexey Slyusarenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexeySlyusarenko/smarthome.pw/issues"
+  },
+  "homepage": "https://github.com/AlexeySlyusarenko/smarthome.pw#readme",
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "prettier": "^2.3.2",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

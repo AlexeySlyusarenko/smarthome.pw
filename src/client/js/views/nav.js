@@ -25,7 +25,10 @@ export default class Nav extends Abstract {
 
     const navList = this._element.querySelector('.nav__list')
     for (const navButton of this._navButtons) {
-      navList.append(navButton.getElement());
+      const navItem = document.createElement('li');
+      navItem.classList.add('nav__item');
+      navItem.append(navButton.getElement());
+      navList.append(navItem);
     }
   }
 }

@@ -1,0 +1,13 @@
+.plan {
+  position: relative;
+}
+
+.plan__draw {
+  width: 100%;
+  height: 100%;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  stroke: var(--text-color);
+  fill: none;
+}

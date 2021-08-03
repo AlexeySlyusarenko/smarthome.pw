@@ -149,7 +149,12 @@ const icon = {
     title: 'video',
     svg: `<path d="M3 15a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2l3 3v-8l-3 3v-2a2 2 0 0 0-2-2h-10a2 2 0 0 0-2 2z"/>`,
     color: '#80cbc4'
-  }
+  },
+  1031: {
+    title: 'menu',
+    svg: `<circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="19" r="1"></circle>`,
+    color: '#80cbc4'
+  },
 };
 
 export {

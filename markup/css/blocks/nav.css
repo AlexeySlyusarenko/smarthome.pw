@@ -8,7 +8,6 @@
   margin-bottom: calc(var(--button-nav-size) + 2 * var(--nav-margin));
   border-radius: var(--nav-radius);
   background-color: var(--nav-bg);
-  backdrop-filter: blur(10px);
 }
 
 .nav__header {
@@ -37,7 +36,7 @@
 .nav__item {
   display: grid;
 }
-.nav__item--menu {
+.nav--quick .nav__item:last-child {
   grid-column: -2 / span 1;
   grid-row: 1 / 2;
 }

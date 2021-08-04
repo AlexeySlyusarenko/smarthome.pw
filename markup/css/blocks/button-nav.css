@@ -40,7 +40,7 @@
   z-index: 350;
   display: block;
   position: relative;
-  margin: 10% 0 0 0;
+  margin: 10px 0 0 0;
   padding: 0;
   font-size: var(--button-nav-title-size);
   font-style : normal;

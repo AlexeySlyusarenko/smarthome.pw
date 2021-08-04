@@ -16,9 +16,9 @@ export default class View {
     this._page = new Page();
     this._loader = new Loader();
 
-    this._navButtons = [];
+    this._navButtons = {};
     for (const key in navButtonMock) {
-      this._navButtons.push(new ButtonNav(key, navButtonMock[key]));
+      this._navButtons[key] = new ButtonNav(key, navButtonMock[key]);
     }
 
     for (const key in navMock) {

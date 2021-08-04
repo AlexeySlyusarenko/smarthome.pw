@@ -1,5 +1,10 @@
 import Abstract from './abstract.js';
 
+const TypeMenu = {
+  QUICK: 'quick',
+  MAIN: 'main',
+};
+
 export default class Nav extends Abstract {
   constructor(data, navButtons, type) {
     if(!Array.isArray(navButtons)) {
@@ -7,28 +12,40 @@ export default class Nav extends Abstract {
     }
 
     super();
-    console.log(data, navButtons, type);
 
     this._data = data;
-    this._navButtons = navButtons.filter(navButton => navButton);
+    this._navButtons = navButtons;
     this._type = type;
   }
 
   _getTemplate() {
-    return this._template = `<nav class="nav nav--${this._type}">
-                                <ul class="nav__list"></ul>
-                              </nav>`;
-  }
+    this._template = '';
 
-  _create() {
-    super._create();
+    for (const data of this._data) {
+      const { buttons, title } = data;
 
-    const navList = this._element.querySelector('.nav__list')
-    for (const navButton of this._navButtons) {
-      const navItem = document.createElement('li');
-      navItem.classList.add('nav__item');
-      navItem.append(navButton.getElement());
-      navList.append(navItem);
+      const navHeader = this._type === TypeMenu.MAIN ?
+        `<h3 class="nav__header">
+          ${title}
+        </h3>`:
+        '';
+
+      const navList = `<ul class="nav__list">
+                        ${buttons.reduce((accum, id) => {
+                          return accum = `${accum}
+                                  <li class="nav__item">
+                                    ${this._navButtons[id].getElement().outerHTML}
+                                  </li>`
+                        }, '')}
+                      </ul>`
+
+      this._template = `${this._template}
+                        ${navHeader}
+                        ${navList}`
     }
+
+    return this._template = `<nav class="nav nav--${this._type}">
+                              ${this._template}
+                            </nav>`;
   }
 }

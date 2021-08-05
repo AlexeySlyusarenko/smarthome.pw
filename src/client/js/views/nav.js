@@ -31,12 +31,9 @@ export default class Nav extends Abstract {
         '';
 
       const navList = `<ul class="nav__list">
-                        ${buttons.reduce((accum, id) => {
-                          return accum = `${accum}
-                                  <li class="nav__item">
-                                    ${this._navButtons[id].getElement().outerHTML}
-                                  </li>`
-                        }, '')}
+                        ${buttons.reduce((accum, id) => (
+                          `${accum}<li class="nav__item">${id}</li>`
+                        ), '')}
                       </ul>`
 
       this._template = `${this._template}
@@ -47,5 +44,13 @@ export default class Nav extends Abstract {
     return this._template = `<nav class="nav nav--${this._type}">
                               ${this._template}
                             </nav>`;
+  }
+
+  _create() {
+    super._create();
+
+    for (const element of this._element.querySelectorAll('.nav__item')) {
+      element.firstChild.replaceWith(this._navButtons[element.textContent].getElement());
+    }
   }
 }

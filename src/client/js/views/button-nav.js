@@ -52,7 +52,6 @@ export default class ButtonNav extends Abstract {
   }
   _clickHandle(evt) {
     evt.preventDefault();
-
     this._element.classList.toggle('button-nav--active');
   }
 }

@@ -9,12 +9,12 @@ export default class Abstract {
   }
 
   _create() {
-    const element = document.createElement('div');
+    const container = document.createElement('div');
 
     if(!this._template) this._getTemplate();
 
-    element.innerHTML = this._template;
-    this._element = element.firstChild;
+    container.innerHTML = this._template;
+    this._element = container.firstChild;
   }
 
   getElement() {

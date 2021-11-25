@@ -1,11 +1,6 @@
 export default class Abstract {
   constructor() {
-    this._template = null;
     this._element = null;
-  }
-
-  _getTemplate() {
-    new Error('Element template not created.');
   }
 
   _create() {
@@ -18,7 +13,6 @@ export default class Abstract {
   }
 
   getElement() {
-
     if(!this._element) this._create();
 
     return this._element;

@@ -11,11 +11,13 @@ export default class Page {
   getNavElement() {
     return this._navElement;
   }
+  getControlElement() {
+    return this._controlElement;
+  }
 
   showLoader() {
     this._loaderElement.classList.remove('page__loader--hidden');
   }
-
   hideLoader() {
     this._loaderElement.classList.add('page__loader--hidden');
   }
